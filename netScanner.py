@@ -438,7 +438,7 @@ def save_ip_scanner(result):
 
 
 def save_ip_port_scanner(result):
-    with open('ip_scan.txt', 'w') as f:
+    with open('port_scan.txt', 'w') as f:
         f.write("-----------------------------------\nIP Address\tOpen Ports\n-----------------------------------\n")
         for i in result:
             f.write("{}\t{}".format(i["ip"], i["ports"]))
